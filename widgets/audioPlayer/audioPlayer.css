@@ -1,0 +1,363 @@
+/* AUDIO PLAYER */
+.audioPlayer {
+    background-color: #ad1a6f;
+    font-size:0;
+    display: inline-block;
+    margin:10px 0;
+}
+.audioPlayer > * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size:16px;
+}
+.audioPlayer a {
+    text-decoration: none;
+}
+/********************************* CONTROLES *********************************/
+.audioPlayer .mdi-container {
+    width: 25px;    
+    height:25px;    
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+}
+.audioPlayer .mdi-container:hover {
+    background-color: white;    
+}
+.audioPlayer .mdi-container.play {
+    border-right: 1px solid white;
+}
+.audioPlayer .mdi-container.play .mdi {
+    -webkit-transition: margin .3s;
+    transition: margin .3s;
+}
+.audioPlayer .mdi-container.play.active .mdi-play-circle-outline{
+    margin-top: -45px;
+}
+.audioPlayer .mdi-container.play.active .mdi-pause-circle-outline{
+    margin-top: -39px;
+}
+.audioPlayer .mdi-container.download {
+    border-left: 1px solid white;
+    float:right;
+}
+
+.audioPlayer .mdi-container .mdi {
+    font-size: 20px;
+    color: white;
+    line-height: 25px!important;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+.audioPlayer .mdi-container:hover .mdi {
+    color: #ad1a6f;
+}
+
+.audioPlayer.black .mdi-container {
+    width: 25px;    
+    height:25px;    
+    text-align: center;
+    overflow: hidden;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    background-color: white; 
+}
+.audioPlayer.black .mdi-container:hover {
+    background-color: #252A30;    
+}
+.audioPlayer.black .mdi-container.play {
+    border-right: 1px solid #252A30;
+}
+.audioPlayer.black .mdi-container.play .mdi {
+    -webkit-transition: margin .3s;
+    transition: margin .3s;
+}
+.audioPlayer.black .mdi-container.play.active .mdi-play-circle-outline{
+    margin-top: -45px;
+}
+.audioPlayer.black .mdi-container.play.active .mdi-pause-circle-outline{
+    margin-top: -39px;
+}
+.audioPlayer.black .mdi-container.download {
+    border-left: 1px solid #252A30;
+    float:right;
+}
+
+.audioPlayer.black .mdi-container .mdi {
+    font-size: 20px;
+    color: #252A30;
+    line-height: 25px!important;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+.audioPlayer.black .mdi-container:hover .mdi {
+    color: white;
+}
+/********************************** CONTROLES **********************************/
+/********************************** TRACK **********************************/
+.audioPlayer .controls_container.track {
+    padding: 0 5px;
+}
+.audioPlayer .controls_container.track input[type="range"].trackRange {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    width:100%;
+    margin: 0 10px;
+    height: 10px;
+    margin: 0;
+    border: none;
+    padding: 1px 2px;
+    border-radius: 14px;
+    background: #FFF;
+    outline: none; /* no focus outline */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.audioPlayer .controls_container.track input[type="range"].trackRange::-moz-range-track {
+    border: inherit;
+    background: #ad1a6f;
+}
+.audioPlayer .controls_container.track input[type="range"].trackRange::-ms-track {
+    border: inherit;
+    color: #ad1a6f; /* don't drawn vertical reference line */
+    background: #ad1a6f;
+}
+.audioPlayer .controls_container.track input[type="range"].trackRange::-ms-fill-lower,
+.audioPlayer .controls_container.track input[type="range"].trackRange::-ms-fill-upper {
+    background: #ad1a6f;
+}
+.audioPlayer .controls_container.track input[type="range"].trackRange::-ms-tooltip {
+    display: none;
+}
+/* thumb */
+.audioPlayer .controls_container.track input[type="range"].trackRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 12px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ad1a6f), color-stop(100%, #ad1a6f)); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top , #ad1a6f 0, #ad1a6f 100%); /* older mobile safari and android > 2.2 */;
+    background-image: linear-gradient(to bottom, #ad1a6f 0, #ad1a6f 100%); /* W3C */
+    cursor:pointer;
+}
+.audioPlayer .controls_container.track input[type="range"].trackRange::-moz-range-thumb {
+    width: 40px;
+    height: 18px;
+    border: none;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%); /* W3C */
+    cursor:pointer;
+}
+.audioPlayer .controls_container.track input[type="range"].trackRange::-ms-thumb {
+    width: 40px;
+    height: 18px;
+    border-radius: 12px;
+    border: 0;
+    background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%); /* W3C */
+    cursor:pointer;
+}
+/****************** BLACK ********************/
+.audioPlayer.black .controls_container.track input[type="range"].trackRange::-moz-range-track {
+    background: #ad1a6f;
+}
+.audioPlayer.black .controls_container.track input[type="range"].trackRange::-ms-track {
+    color: #252A30; /* don't drawn vertical reference line */
+    background: #252A30;
+}
+.audioPlayer.black .controls_container.track input[type="range"].trackRange::-ms-fill-lower,
+.audioPlayer.black .controls_container.track input[type="range"].trackRange::-ms-fill-upper {
+    background: #252A30;
+}
+/* thumb */
+.audioPlayer.black .controls_container.track input[type="range"].trackRange::-webkit-slider-thumb {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #252A30), color-stop(100%, #252A30)); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top , #252A30 0, #252A30 100%); /* older mobile safari and android > 2.2 */;
+    background-image: linear-gradient(to bottom, #252A30 0, #252A30 100%); /* W3C */
+}
+/****************** BLACK ********************/
+/********************************** TRACK **********************************/
+/********************************** VOLUMEN **********************************/
+.audioPlayer .controls_container.volumen {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    text-align: center;
+    position:relative;
+}
+.audioPlayer .controls_container.volumen .mdi-container {
+    width: 25px;
+    height: 25px;
+    float:left;
+
+}
+.audioPlayer .controls_container.volumen .mdi-container .mdi {
+    -webkit-transition: margin .3s;
+    transition: margin .3s;
+}
+.audioPlayer .controls_container.volumen .mdi-container.muted .mdi-volume-high{
+    margin-top: -45px;
+}
+.audioPlayer .controls_container.volumen .mdi-container.muted .mdi-volume-off{
+    margin-top: -39px;
+}
+
+.audioPlayer .controls_container.volumen .input_container {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+}
+.audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange{
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    margin: 0 10px;
+    width: 100%;
+    height: 10px;
+    margin: 0;
+    border: none;
+    padding: 1px 2px;
+    border-radius: 14px;
+    background: #FFF;
+    outline: none; /* no focus outline */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-moz-range-track {
+    border: inherit;
+    background: #ad1a6f;
+}
+.audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-track {
+    border: inherit;
+    color: #ad1a6f; /* don't drawn vertical reference line */
+    background: #ad1a6f;
+}
+.audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-fill-lower,
+.audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-fill-upper {
+    background: #ad1a6f;
+}
+.audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-tooltip {
+    display: none;
+}
+/* thumb */
+.audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 12px;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ad1a6f), color-stop(100%, #ad1a6f)); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top , #ad1a6f 0, #ad1a6f 100%); /* older mobile safari and android > 2.2 */;
+    background-image: linear-gradient(to bottom, #ad1a6f 0, #ad1a6f 100%); /* W3C */
+    cursor:pointer;
+}
+.audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-moz-range-thumb {
+    width: 40px;
+    height: 18px;
+    border: none;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%); /* W3C */
+    cursor:pointer;
+}
+.audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-thumb {
+    width: 40px;
+    height: 18px;
+    border-radius: 12px;
+    border: 0;
+    background-image: linear-gradient(to bottom, #529de1 0, #245e8f 100%); /* W3C */
+    cursor:pointer;
+}
+
+/****************** BLACK ********************/
+.audioPlayer.black .controls_container.volumen .input_container {
+    background-color: white!important;
+}
+.audioPlayer.black .controls_container.volumen .input_container input[type="range"].volumeRange{
+    background: #252A30;
+}
+.audioPlayer.black .controls_container.volumen .input_container input[type="range"].volumeRange::-moz-range-track {
+    background: #252A30;
+}
+.audioPlayer.black .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-track {
+    color: #252A30; /* don't drawn vertical reference line */
+    background: #252A30;
+}
+.audioPlayer.black .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-fill-lower,
+.audioPlayer.black .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-fill-upper {
+    background: #252A30;
+}
+/* thumb */
+.audioPlayer.black .controls_container.volumen .input_container input[type="range"].volumeRange::-webkit-slider-thumb {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, white)); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top , white 0, white 100%); /* older mobile safari and android > 2.2 */;
+    background-image: linear-gradient(to bottom, white 0, white 100%); /* W3C */
+}
+/****************** BLACK ********************/
+//MEDIDAS 
+.audioPlayer.full{
+    width:480px;
+    font-size:0px;
+    margin-bottom: 10px;
+}
+.audioPlayer.full .controls_container.track {
+    width: 306px;
+    line-height: 25px;
+}
+.audioPlayer.full .controls_container.volumen {
+    border-right: none;
+}
+.audioPlayer.full .controls_container.volumen > * {
+    display:inline-block;
+}
+.audioPlayer.full .controls_container.volumen .input_container {
+    width: 70px;
+    line-height: 25px;
+    margin-left: 5px;
+}
+
+.audioPlayer.medium{
+    width: 250px;
+}
+.audioPlayer.medium .controls_container.track {
+    width: 162px;
+}
+.audioPlayer.medium .controls_container.volumen {
+    border-right: none;
+}
+
+.audioPlayer.medium .controls_container.volumen .input_container,
+.audioPlayer.small .controls_container.volumen .input_container {
+    opacity: 0;
+    width: 80px;
+    position: absolute;
+    top:-53px;
+    left:-28px;
+    transform: rotate(-90deg);
+    background-color: #ad1a6f;
+    border-left: 1px solid white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+.audioPlayer.medium .controls_container.volumen:hover .input_container,
+.audioPlayer.small .controls_container.volumen:hover .input_container {
+    opacity: 1;
+}
+
+.audioPlayer.small{
+    max-width:100%;
+}
+.audioPlayer.small .controls_container.track {
+    display:none;
+}
+.audioPlayer.small .controls_container.volumen {
+    border: none;
+}
+/* AUDIO PLAYER */
+/********************************** VOLUMEN **********************************/
