@@ -39,6 +39,18 @@ function futura_shortcode_reproductoraudio($atts)
     }
 }
 
+function futura_audiohome_filter($content)
+{
+    $pod = pods('post', get_the_ID());
+    if ($pod->field('audio_home')) {
+        $urls = explode(',', $pod->field('audio_home'));
+        $home_player_content =  do_shortcode('[reproductoraudio type="small" mp3="' . $urls[0] . '" ogg="' . $urls[1] . '"]');
+        return $home_player_content . $content;
+    } else {
+        return $content;
+    }
+}
+
 
 function wp_futura_shortcodes_init()
 {
@@ -48,5 +60,6 @@ function wp_futura_shortcodes_init()
     wp_enqueue_style('futura_reproductoraudio_audioPlayer',     plugins_url('widgets/audioPlayer/audioPlayer.css', __FILE__), array('futura_reproductoraudio_materialicons'));
 
     add_shortcode( 'reproductoraudio', 'futura_shortcode_reproductoraudio' );
+    add_filter('the_content', 'futura_audiohome_filter');
 }
 add_action('init', 'wp_futura_shortcodes_init');
