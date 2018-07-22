@@ -25,7 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 */
 
+include_once('styles.php');
 include_once('shortcodes.php');
 include_once('filters.php');
 include_once('widgets/registerWidgets.php');
-
