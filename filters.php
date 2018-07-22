@@ -13,8 +13,15 @@ function futura_audiohome_filter($content)
 }
 
 
+function futura_author_filter()
+{
+    return;
+}
+
+
 function wp_futura_filters_init()
 {
     add_filter('the_content', 'futura_audiohome_filter');
+    add_filter('the_author',  'futura_author_filter');
 }
 add_action('init', 'wp_futura_filters_init');
