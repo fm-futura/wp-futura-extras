@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name:        FM Futura Shortcodes
-Plugin URI:         https://github.com/fm-futura/wp-futura-shortcodes
-GitHub Plugin URI:  https://github.com/fm-futura/wp-futura-shortcodes
-Description:        Shortcodes para FM Futura
+Plugin Name:        FM Futura Extras
+Plugin URI:         https://github.com/fm-futura/wp-futura-extras
+GitHub Plugin URI:  https://github.com/fm-futura/wp-futura-extras
+Description:        Shortcodes y otras cosas para FM Futura
 Version:            20180718
 Author:             FM Futura
 Author URI:         https://fmfutura.com.ar
