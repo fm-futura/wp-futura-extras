@@ -19,9 +19,20 @@ function futura_author_filter()
 }
 
 
+function futura_get_the_date_filter($the_date, $d, $post)
+{
+    if (is_single()) {
+        return $the_date;
+    } else {
+        return false;
+    }
+}
+
+
 function wp_futura_filters_init()
 {
-    add_filter('the_content', 'futura_audiohome_filter');
-    add_filter('the_author',  'futura_author_filter');
+    add_filter('the_content',   'futura_audiohome_filter');
+    add_filter('the_author',    'futura_author_filter');
+    add_filter('get_the_date',  'futura_get_the_date_filter');
 }
 add_action('init', 'wp_futura_filters_init');
