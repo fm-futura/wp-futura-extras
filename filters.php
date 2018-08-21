@@ -1,10 +1,21 @@
 <?php
 
+function futura_get_audiohome_urls($post_id)
+{
+    if (!$post_id) {
+        $post_id = get_the_ID();
+    }
+
+    $pod = pods('post', $post_id);
+    return  $pod->field('audio_home');
+}
+
 function futura_audiohome_filter($content)
 {
-    $pod = pods('post', get_the_ID());
-    if ($pod->field('audio_home')) {
-        $urls = explode(',', $pod->field('audio_home'));
+    $urls = futura_get_audiohome_urls();
+    if ($urls) {
+        $urls = explode(',', $urls);
+
         $home_player_content =  do_shortcode('[reproductoraudio type="small" mp3="' . $urls[0] . '" ogg="' . $urls[1] . '"]');
         return $home_player_content . $content;
     } else {
