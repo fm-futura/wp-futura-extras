@@ -10,17 +10,23 @@ function futura_get_audiohome_urls($post_id)
     return  $pod->field('audio_home');
 }
 
-function futura_audiohome_filter($content)
+function futura_get_audiohome_player($post_id)
 {
-    $urls = futura_get_audiohome_urls();
+    $urls = futura_get_audiohome_urls($post_id);
     if ($urls) {
         $urls = explode(',', $urls);
 
         $home_player_content =  do_shortcode('[reproductoraudio type="small" mp3="' . $urls[0] . '" ogg="' . $urls[1] . '"]');
-        return $home_player_content . $content;
+        return $home_player_content;
     } else {
-        return $content;
+        return '';
     }
+}
+
+function futura_audiohome_filter($content)
+{
+    $home_player_content = futura_get_audiohome_player();
+    return $home_player_content . $content;
 }
 
 
