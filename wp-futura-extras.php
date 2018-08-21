@@ -4,7 +4,7 @@ Plugin Name:        FM Futura Extras
 Plugin URI:         https://github.com/fm-futura/wp-futura-extras
 GitHub Plugin URI:  https://github.com/fm-futura/wp-futura-extras
 Description:        Shortcodes y otras cosas para FM Futura
-Version:            20180723
+Version:            20180821
 Author:             FM Futura
 Author URI:         https://fmfutura.com.ar
 License:            AGPL-3.0
