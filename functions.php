@@ -1,6 +1,6 @@
 <?php
 
-function futura_get_post_excerpt($post, $strip_tags = TRUE, $show_read_more = FALSE)
+function futura_get_post_excerpt($post, $limit = '', $strip_tags = TRUE, $show_read_more = FALSE)
 {
     global $preview;
     $more_link_text = null;
@@ -42,6 +42,21 @@ function futura_get_post_excerpt($post, $strip_tags = TRUE, $show_read_more = FA
     $teaser = $content[0];
     if ($strip_tags) {
         $teaser = strip_tags($teaser);
+    }
+
+    if ($limit != '') {
+        $teaser = explode(' ', $teaser, $limit);
+
+        if (count($teaser)>=$limit) {
+            array_pop($teaser);
+            $teaser = implode(" ",$teaser).'...';
+        } else {
+            $teaser = implode(" ",$teaser);
+        }
+
+        if (trim($teaser) == '...') {
+            $teaser = '';
+        }
     }
 
     $output .= $teaser;
