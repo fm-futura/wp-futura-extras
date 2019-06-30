@@ -1,6 +1,6 @@
 <?php
 
-function futura_get_audiohome_urls($post_id)
+function futura_get_audiohome_urls($post_id=NULL)
 {
     if (!$post_id) {
         $post_id = get_the_ID();
@@ -10,7 +10,7 @@ function futura_get_audiohome_urls($post_id)
     return  $pod->field('audio_home');
 }
 
-function futura_get_audiohome_player($post_id)
+function futura_get_audiohome_player($post_id=NULL)
 {
     $urls = futura_get_audiohome_urls($post_id);
     if ($urls) {
