@@ -1,6 +1,6 @@
 <?php
 
-function futura_get_audiohome_urls($post_id=NULL)
+function futura_get_audiohome_urls($post_id = NULL)
 {
     if (!$post_id) {
         $post_id = get_the_ID();
@@ -10,7 +10,7 @@ function futura_get_audiohome_urls($post_id=NULL)
     return  $pod->field('audio_home');
 }
 
-function futura_get_audiohome_player($post_id=NULL)
+function futura_get_audiohome_player($post_id = NULL)
 {
     $urls = futura_get_audiohome_urls($post_id);
     if ($urls) {
@@ -36,7 +36,7 @@ function futura_author_filter()
 }
 
 
-function futura_get_the_date_filter($the_date, $d, $post)
+function futura_get_the_date_filter($the_date, $d = NULL, $post = NULL)
 {
     if (is_single()) {
         return $the_date;
@@ -46,7 +46,7 @@ function futura_get_the_date_filter($the_date, $d, $post)
 }
 
 
-function futura_post_thumbnail_html_filter($html, $post_id, $post_thumbnail_id, $size, $attr)
+function futura_post_thumbnail_html_filter($html, $post_id = NULL, $post_thumbnail_id = NULL, $size = NULL, $attr = NULL)
 {
     if (is_single()) {
         return false;
