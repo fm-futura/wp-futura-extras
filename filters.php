@@ -16,8 +16,16 @@ function futura_get_audiohome_player($post_id = NULL)
     if ($urls) {
         $urls = explode(',', $urls);
 
-        $home_player_content =  do_shortcode('[reproductoraudio type="small" mp3="' . $urls[0] . '" ogg="' . $urls[1] . '"]');
+        $mp3 = $urls[0];
+        $ogg = '';
+
+        if (count($urls) > 1) {
+            $ogg = $urls[1];
+        }
+
+        $home_player_content =  do_shortcode('[reproductoraudio type="small" mp3="' . $mp3 . '" ogg="' . $ogg . '"]');
         return $home_player_content;
+
     } else {
         return '';
     }
