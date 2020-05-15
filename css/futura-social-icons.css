@@ -1,0 +1,26 @@
+.futura-social-icons {
+  height 5vh;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  border-top: 5px solid #282828;
+  background: #282828;
+}
+
+.futura-social-icons span {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.futura-social-icons a {
+  color: #f6ec80ff !important;
+  margin-right: .75ex;
+  margin-left: .75ex;
+  line-height: 3vh!important;
+}
+
+.futura-social-icons .td-icon-font {
+  font-size: 3vh!important;
+}
