@@ -1,4 +1,11 @@
+<?php
+$shortcodes_base_url = plugins_url('shortcodes/', dirname(__FILE__));
+?>
+
 <div class="futura-social-icons" id="wp_futura_social_icons">
+
+        <div class="texto_radio_futura" > <img src="<?php echo $shortcodes_base_url ?>texto_radio_futura.svg" /> </div>
+
         <span class="td-social-icon-wrap">
             <a target="_blank" href="https://api.whatsapp.com/send?phone=5492216190382&amp;text=&amp;source=&amp;data=" title="WhatsApp">
                 <i class="td-icon-font td-icon-whatsapp"></i>

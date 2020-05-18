@@ -1,9 +1,13 @@
 .futura-social-icons {
-  height: 5vh;
+  height: 6vh;
   display: flex;
   flex-grow: 1;
   justify-content: center;
   background: white;
+}
+
+.futura-social-icons .texto_radio_futura {
+  display: flex;
 }
 
 .futura-social-icons span {
@@ -17,7 +21,6 @@
   color: #eec1d8 !important;
   margin-right: .75ex;
   margin-left: .75ex;
-  line-height: 3vh!important;
 }
 
 .futura-social-icons .td-icon-font {
