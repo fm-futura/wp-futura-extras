@@ -29,4 +29,5 @@ include_once('functions.php');
 include_once('styles.php');
 include_once('shortcodes.php');
 include_once('filters.php');
+include_once('scripts.php');
 include_once('widgets/registerWidgets.php');
