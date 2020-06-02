@@ -1,13 +1,22 @@
 .futura-social-icons {
-  height: 6vh;
+  min-height: 6vh;
   display: flex;
   flex-grow: 1;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   background: white;
 }
 
+.futura-social-icons-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
 .futura-social-icons .texto_radio_futura {
   display: flex;
+  font-size: 3em;
 }
 
 .futura-social-icons span {
