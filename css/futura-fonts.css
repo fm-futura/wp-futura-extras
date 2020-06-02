@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Futura Radio Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(FUTURARADIO-Regular.ttf)  format('truetype'),
+       url(FUTURARADIO-Regular.woff) format('woff'),
+       url(FUTURARADIO-Regular.svg)  format('svg');
+}
+
+.font-futura {
+  font-family: 'Futura Radio Regular' !important;
+  text-transform: uppercase !important;
+}
