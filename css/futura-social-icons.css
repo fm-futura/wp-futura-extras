@@ -11,7 +11,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2%;
+  align-content: center;
 }
 
 .futura-social-icons .texto_radio_futura {
@@ -28,12 +28,12 @@
 
 .futura-social-icons a {
   color: #eec1d8 !important;
-  margin-right: .75ex;
-  margin-left: .75ex;
+  margin-right: .75em;
+  margin-left: .75em;
 }
 
 .futura-social-icons .td-icon-font {
-  font-size: 3vh!important;
+  font-size: 4vh!important;
 }
 
 .futura-social-icons .td-icon-font:hover {
