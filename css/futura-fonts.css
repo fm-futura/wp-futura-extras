@@ -10,4 +10,6 @@
 .font-futura {
   font-family: 'Futura Radio Regular' !important;
   text-transform: uppercase !important;
+  /* XXX FIXME: make the change later in font to correct the baseline position */
+  padding-top: 0.2em;
 }
