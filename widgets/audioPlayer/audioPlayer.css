@@ -358,6 +358,7 @@
     display:none;
 }
 .audioPlayer.small .controls_container.volumen {
+    display:none;
     border: none;
 }
 /* AUDIO PLAYER */
