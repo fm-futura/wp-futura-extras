@@ -1,6 +1,5 @@
 /* AUDIO PLAYER */
 .audioPlayer {
-    background-color: #ad1a6f;
     font-size:0;
     display: inline-block;
     margin:10px 0;
@@ -18,6 +17,7 @@
 .audioPlayer .mdi-container {
     width: 25px;    
     height:25px;    
+    background-color: #ad1a6f;
     text-align: center;
     overflow: hidden;
     -webkit-transition: background .3s;
@@ -41,7 +41,6 @@
 }
 .audioPlayer .mdi-container.download {
     border-left: 1px solid white;
-    float:right;
 }
 
 .audioPlayer .mdi-container .mdi {
@@ -82,7 +81,6 @@
 }
 .audioPlayer.black .mdi-container.download {
     border-left: 1px solid #252A30;
-    float:right;
 }
 
 .audioPlayer.black .mdi-container .mdi {
@@ -191,7 +189,6 @@
 .audioPlayer .controls_container.volumen .mdi-container {
     width: 25px;
     height: 25px;
-    float:left;
 
 }
 .audioPlayer .controls_container.volumen .mdi-container .mdi {
