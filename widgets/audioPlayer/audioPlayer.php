@@ -2,13 +2,16 @@
 ob_start();
 ?>
 <div preload="none" class="audioPlayer <?php echo $a['color']; ?> <?php if($a['type']==''){echo 'medium';}else{echo $a['type'];}?>" data-audio-mp3="<?php echo $a['mp3']; ?>" data-audio-ogg="<?php echo $a['ogg']; ?>">
+
     <div class="mdi-container play">
         <a href="" class="mdi mdi-play-circle-outline"></a>
         <a href="" class="mdi mdi-pause-circle-outline"></a>
     </div>
+
     <div class="controls_container track">
         <input type="range" class="trackRange" value="0" max="100"/>
     </div>
+
     <div class="controls_container volumen">
         <div class="mdi-container">
             <a href="" class="mdi mdi-volume-high"></a>
@@ -17,8 +20,9 @@ ob_start();
         <div class="input_container">
             <input type="range" class="volumeRange" value="50" max="100">
         </div>
-    </div><!--
-    --><div class="mdi-container download">
+    </div>
+
+    <div class="mdi-container download">
         <a href="<?php echo $a['mp3']; ?>" download class="mdi mdi-download"></a>
     </div>
 </div>
