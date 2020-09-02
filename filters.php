@@ -33,8 +33,12 @@ function futura_get_audiohome_player($post_id = NULL)
 
 function futura_audiohome_filter($content)
 {
-    $home_player_content = futura_get_audiohome_player();
-    return $home_player_content . $content;
+    if ( is_singular() && in_the_loop() && is_main_query() ) {
+        $home_player_content = futura_get_audiohome_player();
+        return $home_player_content . $content;
+    } else {
+        return $content;
+    }
 }
 
 
