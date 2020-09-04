@@ -5,7 +5,9 @@ $shortcodes_base_url = plugins_url('shortcodes/', dirname(__FILE__));
 <div class="futura-social-icons" id="wp_futura_social_icons">
 
         <span class="texto_radio_futura font-futura">
-            RADIO FUTURA
+            <a href="/" class="futura-link-home">
+                RADIO FUTURA
+            </a>
         </span>
 
         <div class="futura-social-icons-container">

@@ -19,6 +19,10 @@
   font-size: 3em;
 }
 
+a.futura-link-home {
+  color: #282828 !important;
+}
+
 .futura-social-icons span {
   display: flex;
   flex-grow: 0;
@@ -26,7 +30,7 @@
   align-items: center;
 }
 
-.futura-social-icons a {
+.futura-social-icons a:not(.futura-link-home) {
   color: #eec1d8 !important;
   margin-right: .75em;
   margin-left: .75em;
