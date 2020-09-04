@@ -17,7 +17,7 @@
 .audioPlayer .mdi-container {
     width: 25px;    
     height:25px;    
-    background-color: #ad1a6f;
+    background-color: #eec1d8;
     text-align: center;
     overflow: hidden;
     -webkit-transition: background .3s;
@@ -51,7 +51,7 @@
     transition: color .3s;
 }
 .audioPlayer .mdi-container:hover .mdi {
-    color: #ad1a6f;
+    color: #eec1d8;
 }
 
 .audioPlayer.black .mdi-container {
@@ -117,16 +117,16 @@
 }
 .audioPlayer .controls_container.track input[type="range"].trackRange::-moz-range-track {
     border: inherit;
-    background: #ad1a6f;
+    background: #eec1d8;
 }
 .audioPlayer .controls_container.track input[type="range"].trackRange::-ms-track {
     border: inherit;
-    color: #ad1a6f; /* don't drawn vertical reference line */
-    background: #ad1a6f;
+    color: #eec1d8; /* don't drawn vertical reference line */
+    background: #eec1d8;
 }
 .audioPlayer .controls_container.track input[type="range"].trackRange::-ms-fill-lower,
 .audioPlayer .controls_container.track input[type="range"].trackRange::-ms-fill-upper {
-    background: #ad1a6f;
+    background: #eec1d8;
 }
 .audioPlayer .controls_container.track input[type="range"].trackRange::-ms-tooltip {
     display: none;
@@ -138,9 +138,9 @@
     height: 10px;
     border: none;
     border-radius: 12px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ad1a6f), color-stop(100%, #ad1a6f)); /* android <= 2.2 */
-    background-image: -webkit-linear-gradient(top , #ad1a6f 0, #ad1a6f 100%); /* older mobile safari and android > 2.2 */;
-    background-image: linear-gradient(to bottom, #ad1a6f 0, #ad1a6f 100%); /* W3C */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eec1d8), color-stop(100%, #eec1d8)); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top , #eec1d8 0, #eec1d8 100%); /* older mobile safari and android > 2.2 */;
+    background-image: linear-gradient(to bottom, #eec1d8 0, #eec1d8 100%); /* W3C */
     cursor:pointer;
 }
 .audioPlayer .controls_container.track input[type="range"].trackRange::-moz-range-thumb {
@@ -161,7 +161,7 @@
 }
 /****************** BLACK ********************/
 .audioPlayer.black .controls_container.track input[type="range"].trackRange::-moz-range-track {
-    background: #ad1a6f;
+    background: #eec1d8;
 }
 .audioPlayer.black .controls_container.track input[type="range"].trackRange::-ms-track {
     color: #252A30; /* don't drawn vertical reference line */
@@ -226,16 +226,16 @@
 }
 .audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-moz-range-track {
     border: inherit;
-    background: #ad1a6f;
+    background: #eec1d8;
 }
 .audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-track {
     border: inherit;
-    color: #ad1a6f; /* don't drawn vertical reference line */
-    background: #ad1a6f;
+    color: #eec1d8; /* don't drawn vertical reference line */
+    background: #eec1d8;
 }
 .audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-fill-lower,
 .audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-fill-upper {
-    background: #ad1a6f;
+    background: #eec1d8;
 }
 .audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-ms-tooltip {
     display: none;
@@ -247,9 +247,9 @@
     height: 10px;
     border: none;
     border-radius: 12px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ad1a6f), color-stop(100%, #ad1a6f)); /* android <= 2.2 */
-    background-image: -webkit-linear-gradient(top , #ad1a6f 0, #ad1a6f 100%); /* older mobile safari and android > 2.2 */;
-    background-image: linear-gradient(to bottom, #ad1a6f 0, #ad1a6f 100%); /* W3C */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eec1d8), color-stop(100%, #eec1d8)); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top , #eec1d8 0, #eec1d8 100%); /* older mobile safari and android > 2.2 */;
+    background-image: linear-gradient(to bottom, #eec1d8 0, #eec1d8 100%); /* W3C */
     cursor:pointer;
 }
 .audioPlayer .controls_container.volumen .input_container input[type="range"].volumeRange::-moz-range-thumb {
@@ -334,7 +334,7 @@
     top:-53px;
     left:-28px;
     transform: rotate(-90deg);
-    background-color: #ad1a6f;
+    background-color: #eec1d8;
     border-left: 1px solid white;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
