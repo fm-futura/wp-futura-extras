@@ -23,6 +23,14 @@ function futura_shortcode_social_icons($atts)
 }
 
 
+function futura_shortcode_links($atts)
+{
+    ob_start();
+    include('shortcodes/futura_links.php');
+    return ob_get_clean();
+}
+
+
 function wp_futura_shortcodes_init()
 {
     wp_enqueue_style('futura_reproductoraudio_materialicons',   plugins_url('libs/materialicons/MaterialDesignIcons.css', __FILE__));
@@ -31,5 +39,6 @@ function wp_futura_shortcodes_init()
 
     add_shortcode( 'reproductoraudio',      'futura_shortcode_reproductoraudio' );
     add_shortcode( 'futura-social-icons',   'futura_shortcode_social_icons' );
+    add_shortcode( 'futura-links',          'futura_shortcode_links' );
 }
 add_action('init', 'wp_futura_shortcodes_init');

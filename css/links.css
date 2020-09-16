@@ -1,0 +1,43 @@
+.futura-links-container {
+    height: 16vw;
+    width: 16vw;
+}
+
+.futura-link {
+    position: absolute;
+    display: inline-block;
+}
+
+.futura-link.sir {
+    left: 19%;
+}
+
+.futura-link.farco {
+    top: 25%;
+}
+
+.futura-link.futura {
+    left: 22%;
+    bottom: 0;
+}
+
+.futura-link:hover {
+    z-index: 1;
+}
+
+.futura-link a:hover {
+    transform: scale(1.1);
+}
+
+.futura-link a {
+    height: 8vw;
+    width:  8vw;
+    margin: .5vw;
+    display: inline-block;
+    box-shadow: .25vw .25vw .5vw #282828dd;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: .25s;
+}
