@@ -9,15 +9,17 @@
 }
 
 .futura-link.sir {
-    left: 19%;
+    left: 21%;
+    bottom: 0;
+    transform: scale(.9);
 }
 
 .futura-link.farco {
-    top: 25%;
+    left: 12.5%;
+    transform: scale(1.25);
 }
 
-.futura-link.futura {
-    left: 22%;
+.futura-link.agencia-farco {
     bottom: 0;
 }
 
@@ -34,7 +36,6 @@
     width:  8vw;
     margin: .5vw;
     display: inline-block;
-    box-shadow: .25vw .25vw .5vw #282828dd;
     border-radius: 50%;
     background-size: contain;
     background-repeat: no-repeat;
