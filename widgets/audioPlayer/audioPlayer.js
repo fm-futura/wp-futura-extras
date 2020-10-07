@@ -8,8 +8,8 @@ jQuery(document).ready(function ($) {
 function audioPlayer($player) {
 
     var container = $player;
-    var play = container.find('.mdi-play-circle-outline');
-    var pause = container.find('.mdi-pause-circle-outline');
+    var play = container.find('.control-play');
+    var pause = container.find('.control-pause');
     var mute = container.find('.mdi-volume-high');
     var muted = container.find('.mdi-volume-off');
     var volume = container.find('.volumen .input_container input');

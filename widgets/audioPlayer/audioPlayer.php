@@ -4,8 +4,8 @@ ob_start();
 <div preload="none" class="audioPlayer <?php echo $a['color']; ?> <?php if($a['type']==''){echo 'medium';}else{echo $a['type'];}?>" data-audio-mp3="<?php echo $a['mp3']; ?>" data-audio-ogg="<?php echo $a['ogg']; ?>">
 
     <div class="mdi-container play">
-        <a href="" class="mdi mdi-play-circle-outline"></a>
-        <a href="" class="mdi mdi-pause-circle-outline"></a>
+        <a href="" class="mdi control-play  tdc-font-fa tdc-font-fa-play-circle"> </a>
+        <a href="" class="mdi control-pause tdc-font-fa tdc-font-fa-pause-circle"></a>
     </div>
 
     <div class="controls_container track">
@@ -23,7 +23,7 @@ ob_start();
     </div>
 
     <div class="mdi-container download">
-        <a href="<?php echo $a['mp3']; ?>" download class="mdi mdi-download"></a>
+        <a href="<?php echo $a['mp3']; ?>" download class="mdi tdc-font-fa tdc-font-fa-download"></a>
     </div>
 </div>
 <div class="clearfix"></div>

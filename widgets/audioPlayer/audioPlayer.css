@@ -17,14 +17,13 @@
 .audioPlayer .mdi-container {
     width: 25px;    
     height:25px;    
-    background-color: #eec1d8;
     text-align: center;
     overflow: hidden;
     -webkit-transition: background .3s;
     transition: background .3s;
 }
 .audioPlayer .mdi-container:hover {
-    background-color: white;    
+
 }
 .audioPlayer .mdi-container.play {
     border-right: 1px solid white;
@@ -33,10 +32,13 @@
     -webkit-transition: margin .3s;
     transition: margin .3s;
 }
-.audioPlayer .mdi-container.play.active .mdi-play-circle-outline{
+.audioPlayer .mdi-container.play.active .mdi-play-circle-outline,
+.audioPlayer .mdi-container.play.active .control-play {
     margin-top: -45px;
 }
-.audioPlayer .mdi-container.play.active .mdi-pause-circle-outline{
+
+.audioPlayer .mdi-container.play.active .mdi-pause-circle-outline,
+.audioPlayer .mdi-container.play.active .control-pause {
     margin-top: -39px;
 }
 .audioPlayer .mdi-container.download {
@@ -44,8 +46,8 @@
 }
 
 .audioPlayer .mdi-container .mdi {
-    font-size: 20px;
-    color: white;
+    font-size: 24px;
+    color: #eec1d8;
     line-height: 25px!important;
     -webkit-transition: color .3s;
     transition: color .3s;
