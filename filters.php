@@ -36,6 +36,13 @@ function futura_get_audiohome_player($post_id = NULL)
 
 function futura_audiohome_filter($content)
 {
+    // Newspaper calls the_content filter when rendering the footer but it doesn't touch the current query
+    // so get_the_ID() points to the last rendered post and not the footer page, thus we create a redundant player.
+    // In any case we shouldn't be using audiohome for that page.
+    if (stripos($content, 'wp-futura-footer') != false) {
+        return $content;
+    }
+
     if ( is_singular() && in_the_loop() && is_main_query() ) {
         $home_player_content = futura_get_audiohome_player();
         return $home_player_content . $content;
