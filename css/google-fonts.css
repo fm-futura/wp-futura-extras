@@ -1,2 +1,12 @@
 @import url(//fonts.googleapis.com/css?family=Bebas+Neue);
 @import url(//fonts.googleapis.com/css?family=Suez+One);
+
+.font-bebas {
+  font-family: 'Bebas Neue' !important;
+  font-size: xx-large;
+  line-height: normal;
+}
+
+.font-suez {
+  font-family: 'Suez One' !important;
+}
