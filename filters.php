@@ -23,6 +23,9 @@ function futura_get_audiohome_player($post_id = NULL)
             $ogg = $urls[1];
         }
 
+        $mp3 = str_replace('http://', 'https://', $mp3);
+        $ogg = str_replace('http://', 'https://', $ogg);
+
         $home_player_content =  do_shortcode('[reproductoraudio type="small" mp3="' . $mp3 . '" ogg="' . $ogg . '"]');
         return $home_player_content;
 
