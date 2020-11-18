@@ -1,39 +1,30 @@
 .futura-links-container {
-    height: 16vw;
-    width: 16vw;
+    height: 25vw;
+    width: 25vw;
+}
+
+@media screen and (max-width: 600px) {
+  .futura-links-container {
+      height: 75vw;
+      width: 75vw;
+  }
 }
 
 .futura-link {
+    height: 40%;
+    width:  40%;
     position: absolute;
     display: inline-block;
-}
-
-.futura-link.sir {
-    left: 21%;
-    bottom: 0;
-    transform: scale(.9);
-}
-
-.futura-link.farco {
-    left: 12.5%;
-    transform: scale(1.25);
-}
-
-.futura-link.agencia-farco {
-    bottom: 0;
 }
 
 .futura-link:hover {
     z-index: 1;
 }
 
-.futura-link a:hover {
-    transform: scale(1.1);
-}
-
 .futura-link a {
-    height: 8vw;
-    width:  8vw;
+    height: 100%;
+    width:  100%;
+
     margin: .5vw;
     display: inline-block;
     border-radius: 50%;
@@ -41,4 +32,42 @@
     background-repeat: no-repeat;
     background-position: center center;
     transition: .25s;
+}
+
+.futura-link a:hover {
+    transform: scale(1.1);
+}
+
+
+.futura-link.farco {
+    left: 30%;
+    transform: scale(1.25);
+}
+
+.futura-link.agencia-farco {
+    top: 30%;
+    left: 15%;
+}
+
+.futura-link.sir {
+    top: 35%;
+    left: 40%;
+}
+
+
+.futura-round-link a {
+    color: #222222 !important;
+    border-color: #f6aec5;
+    background-color: #f6aec5;
+
+    border-radius: .5rem;
+    border-width: 1rem;
+    border-left-style: solid;
+    border-right-style: solid;
+
+    font-family: 'Suez One' !important;
+}
+
+.futura-round-button {
+
 }
