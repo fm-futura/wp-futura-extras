@@ -60,11 +60,15 @@
     border-color: #f6aec5;
     background-color: #f6aec5;
 
+    display: inline-block;
+    margin: .1em;
+
     border-radius: .5rem;
     border-width: 1rem;
     border-left-style: solid;
     border-right-style: solid;
 
+    text-align: center;
     font-family: 'Suez One' !important;
 }
 
