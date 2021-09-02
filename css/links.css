@@ -55,10 +55,15 @@
 }
 
 
-.futura-round-link a {
-    color: #222222 !important;
-    border-color: #f6aec5;
-    background-color: #f6aec5;
+.futura-round-link a,
+.futura-round-link-wrapper a,
+a.futura-round-link,
+.futura-links-botones a,
+a.futura-links-botones
+{
+    color: var(--button-text-color, #222222) !important;
+    border-color: var(--button-color, #f6aec5);
+    background-color: var(--button-color, #f6aec5);
 
     display: inline-block;
     margin: .1em;
@@ -69,6 +74,13 @@
     border-right-style: solid;
 
     text-align: center;
+    text-decoration: none !important;
+    font-family: 'Suez One' !important;
+}
+
+
+.wp-block-button,
+.wp-block-button * {
     font-family: 'Suez One' !important;
 }
 
