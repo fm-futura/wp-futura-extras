@@ -1,0 +1,16 @@
+{
+  "apiVersion": 2,
+  "name": "futura/links-a-botones",
+  "version": "0.1.0",
+  "title": "Convertir Links en Botones",
+  "category": "text",
+  "icon": "button",
+  "description": "Convierte cualquier link/enlace en botones con la tipografía de Futura",
+  "supports": {
+    "html": true
+  },
+  "textdomain": "futura-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:../style-links-a-botones/index.css"
+}
