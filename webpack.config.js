@@ -12,6 +12,11 @@ config.plugins.push(
           context: 'blocks',
           from: '*/block.json',
         },
+        {
+          context: 'blocks',
+          from: '*/render.php',
+          noErrorOnMissing: true,
+        },
       ],
     }
   )
@@ -20,6 +25,7 @@ config.plugins.push(
 config.entry = {
   'links-a-botones/index': path.resolve( process.cwd(), 'blocks/links-a-botones', 'index.js' ),
   'red-socios-metabox/index': path.resolve( process.cwd(), 'blocks/red-socios-metabox', 'index.js' ),
+  'red-socios-grilla-emprendimientos/index': path.resolve( process.cwd(), 'blocks/red-socios-grilla-emprendimientos', 'index.js' ),
 };
 
 module.exports = config;

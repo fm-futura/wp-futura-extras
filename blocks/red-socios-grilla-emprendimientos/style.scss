@@ -1,0 +1,7 @@
+.block-grilla-emprendimientos {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  place-items: center;
+}
