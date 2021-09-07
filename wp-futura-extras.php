@@ -32,4 +32,5 @@ include_once('filters.php');
 include_once('scripts.php');
 include_once('widgets/registerWidgets.php');
 include_once('settings.php');
+include_once('custom-post-types.php');
 include_once('blocks.php');
