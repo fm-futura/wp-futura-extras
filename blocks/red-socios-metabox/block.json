@@ -1,0 +1,14 @@
+{
+  "apiVersion": 2,
+  "name": "futura/red-socios-metabox",
+  "version": "0.1.0",
+  "title": "metabox para Emprendimientos de la Red de Socios",
+  "category": "text",
+  "icon": "button",
+  "description": "metabox para Emprendimientos de la Red de Socios",
+  "supports": {
+    "html": true
+  },
+  "textdomain": "futura-blocks",
+  "editorScript": "file:./index.js"
+}
