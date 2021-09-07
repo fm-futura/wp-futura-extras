@@ -1,0 +1,15 @@
+{
+  "apiVersion": 2,
+  "name": "futura/red-socios-grilla-emprendimientos",
+  "version": "0.1.0",
+  "title": "Emprendimientos de la Red de Socios",
+  "category": "widgets",
+  "icon": "layout",
+  "description": "Muestra los Emprendimientos de la Red de Socios como una grilla de imagenes",
+  "supports": {
+    "html": true
+  },
+  "textdomain": "futura-blocks",
+  "editorScript": "file:./index.js",
+  "style": "file:../style-red-socios-grilla-emprendimientos/index.css"
+}

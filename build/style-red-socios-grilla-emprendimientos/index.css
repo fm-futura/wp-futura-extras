@@ -1,0 +1,1 @@
+.block-grilla-emprendimientos{-ms-grid-columns:(auto)[3];grid-column-gap:.5rem;grid-row-gap:.5rem;display:-ms-grid;display:grid;grid-template-columns:repeat(3,auto);place-items:center}
