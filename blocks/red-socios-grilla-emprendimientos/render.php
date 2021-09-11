@@ -31,8 +31,10 @@ function render ($block_attributes, $content) {
     $inner = join("\n", $items);
 
     $html = <<<HTML
-        <div class="block-grilla-emprendimientos">
-            {$inner}
+        <div class="block-grilla-emprendimientos--container">
+            <div class="block-grilla-emprendimientos">
+                {$inner}
+            </div>
         </div>
     HTML;
 

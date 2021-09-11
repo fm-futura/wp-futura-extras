@@ -1,7 +1,21 @@
+.block-grilla-emprendimientos--container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .block-grilla-emprendimientos {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 0.5rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 1rem;
   place-items: center;
+}
+
+@media (min-width: 768px) {
+  .block-grilla-emprendimientos--container {
+  }
+
+  .block-grilla-emprendimientos {
+    grid-template-columns: repeat(4, auto);
+  }
 }
