@@ -18,6 +18,18 @@ function futura_shortcode_reproductoraudio($atts)
 function futura_shortcode_social_icons($atts)
 {
     ob_start();
+    $a = shortcode_atts([
+        'no-logo' => false,
+        'class' => '',
+    ], $atts);
+
+    $show_logo = !$a['no-logo'];
+    $class = $a['class'];
+
+    if (!$show_logo) {
+      $class .= ' no-logo';
+    }
+
     include('shortcodes/futura_social_icons.php');
     return ob_get_clean();
 }

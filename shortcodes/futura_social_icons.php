@@ -2,13 +2,15 @@
 $shortcodes_base_url = plugins_url('shortcodes/', dirname(__FILE__));
 ?>
 
-<div class="futura-social-icons" id="wp_futura_social_icons">
+<div class="futura-social-icons <?php echo $class ?>" id="wp_futura_social_icons">
 
+<?php if ($show_logo) { ?>
         <span class="texto_radio_futura font-futura">
             <a href="/" class="futura-link-home">
                 RADIO FUTURA
             </a>
         </span>
+<?php } ?>
 
         <div class="futura-social-icons-container">
             <span class="td-social-icon-wrap">
