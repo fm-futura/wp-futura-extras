@@ -1,0 +1,1 @@
+{"version":3,"file":"links-a-botones/index.css","mappings":"AAAA;EACE;AACF","sources":["webpack://futura-blocks/./blocks/links-a-botones/editor.scss"],"sourcesContent":[".wp-block-futura-button-links-editor {\n  border-style: 2px solid #282828;\n}\n"],"names":[],"sourceRoot":""}
