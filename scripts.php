@@ -1,5 +1,13 @@
 <?php
 
+function wp_futura_disable_eval_turbolinks ($tag, $handle, $src) {
+    if (get_option('futura_enable_turbolinks')) {
+        $tag = str_replace('<script', '<script data-turbolinks-eval="false" ', $tag);
+    }
+    return $tag;
+}
+
+
 function wp_futura_scripts_init()
 {
     if (!is_user_logged_in()) {
@@ -8,4 +16,6 @@ function wp_futura_scripts_init()
         }
     }
 }
+
+add_filter('script_loader_tag',  'wp_futura_disable_eval_turbolinks', 10,3);
 add_action('wp_enqueue_scripts', 'wp_futura_scripts_init');
