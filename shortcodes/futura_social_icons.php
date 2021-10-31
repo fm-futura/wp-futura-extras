@@ -25,6 +25,11 @@ $shortcodes_base_url = plugins_url('shortcodes/', dirname(__FILE__));
                 </a>
             </span>
             <span class="td-social-icon-wrap">
+                <a target="_blank" href="https://www.facebook.com/RadioFutura905/" title="Telegram">
+                    <i class="td-icon-font td-icon-telegram"></i>
+                </a>
+            </span>
+            <span class="td-social-icon-wrap">
                 <a target="_blank" href="https://www.instagram.com/radiofuturafm90.5" title="Instagram">
                     <i class="td-icon-font td-icon-instagram"></i>
                 </a>
