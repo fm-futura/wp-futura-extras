@@ -1,10 +1,18 @@
 .futura-social-icons {
-  min-height: 6vh;
+  min-height: 5vh;
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap-reverse;
   justify-content: flex-start;
   background: white;
+}
+
+@media(max-width: 600px) {
+  .futura-social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 2.5rem;
+  }
 }
 
 .futura-social-icons.no-logo {
@@ -42,6 +50,7 @@ a.futura-link-home {
 
 .futura-social-icons .td-icon-font {
   font-size: 3em !important;
+  width: unset !important;
 }
 
 .futura-social-icons .td-icon-font:hover {
