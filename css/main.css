@@ -2,3 +2,8 @@
   font-family: 'Bebas Neue' !important;
   font-size: xxx-large !important;
 }
+
+.futura-tags {
+  white-space: nowrap;
+  overflow: hidden;
+}
