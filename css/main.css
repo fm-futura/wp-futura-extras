@@ -4,6 +4,17 @@
 }
 
 .futura-tags {
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
+  background: white;
+}
+
+.futura-tag {
+  white-space: nowrap;
+}
+
+@media(max-width: 1366px) {
+  .futura-tags {
+    white-space: normal;
+  }
 }
