@@ -3,15 +3,19 @@
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap-reverse;
-  justify-content: flex-start;
+  justify-content: center;
   background: white;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 1366px) {
+  .futura-social-icons {
+    line-height: 2.5rem;
+  }
+}
+@media(max-width: 670px) {
   .futura-social-icons {
     flex-wrap: wrap;
     justify-content: center;
-    line-height: 2.5rem;
   }
 }
 
