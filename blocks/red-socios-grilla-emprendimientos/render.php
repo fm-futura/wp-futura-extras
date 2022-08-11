@@ -15,7 +15,7 @@ function render ($block_attributes, $content) {
     foreach ($query->posts as $post) {
         $thumb = get_the_post_thumbnail($post, 'medium');
         $title = $post->post_title;
-        $link = get_post_meta($post->ID, 'main_link', true);
+        $link = esc_url($post->main_link);
 
         $item = <<<HTML
                 <div class="block-grilla-emprendimientos--item">

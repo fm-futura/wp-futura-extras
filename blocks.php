@@ -2,6 +2,7 @@
 
 function futura_futura_blocks_block_init() {
     require_once  __DIR__ . '/build/red-socios-grilla-emprendimientos/render.php';
+    require_once  __DIR__ . '/build/red-socios-grilla-emprendimientos/columns.php';
 
     register_block_type( __DIR__ . '/build/links-a-botones');
     register_block_type( __DIR__ . '/build/red-socios-metabox');
