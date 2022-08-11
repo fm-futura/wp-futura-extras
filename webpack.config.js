@@ -14,7 +14,7 @@ config.plugins.push(
         },
         {
           context: 'blocks',
-          from: '*/render.php',
+          from: '*/*.php',
           noErrorOnMissing: true,
         },
       ],
