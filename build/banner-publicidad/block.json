@@ -1,0 +1,15 @@
+{
+  "apiVersion": 2,
+  "name": "futura/banner-publicidad",
+  "version": "0.1.0",
+  "title": "Banners de Publicidad",
+  "category": "widgets",
+  "icon": "layout",
+  "description": "Muestra los banners de publicidad activos según la fecha",
+  "supports": {
+    "html": true
+  },
+  "textdomain": "futura-blocks",
+  "editorScript": "file:./index.js",
+  "style": "file:../style-banner-publicidad/index.css"
+}
