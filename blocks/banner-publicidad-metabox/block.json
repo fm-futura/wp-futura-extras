@@ -1,0 +1,14 @@
+{
+  "apiVersion": 2,
+  "name": "futura/banner-publicidad-metabox",
+  "version": "0.1.0",
+  "title": "metabox para Banners de Publicidad",
+  "category": "text",
+  "icon": "button",
+  "description": "metabox para Banners de Publicidad",
+  "supports": {
+    "html": true
+  },
+  "textdomain": "futura-blocks",
+  "editorScript": "file:./index.js"
+}
